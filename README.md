@@ -26,7 +26,15 @@ The following feedback has come in from the product owner, can you apply these u
 - Ensure that all of the "View" button CTAs on the article grid are aligned with the equivalent buttons in the same row
 
 ```
-YOUR COMMENTS HERE
+For your information, while installing the dependencies, there were multiple warnings about deprecations but I ignored them to not break something accidentally and affect how I complete the tasks. I am sorry if that was intended!
+
+To sort the Category filter button alphabetically, I  used the sort() and .localeCompare() methods. The method allows us to sort strings alphabetically, and it is case-insensitive. 
+
+For the "count" display, I created a utility function. I added the relevant types to interfaces, such as adding the 'Article' type to the ICategorySelector interface, I then ensured that all the required modules were imported and exported for it to work.
+
+My mechanism to clear filters is pretty easy, if clicked to the selected button again, it clears your selection!
+
+Lastly, I aligned the "View" buttons by adding the align items: last baseline CSS property to the ArticleGrid class. This causes some cells to appear taller but I think the UI still looks good. I also added a margin-top property to add separation between the ArticleGrid and CategorySelector divs.
 ```
 
 ## Task 2 - Test Coverage 🤓
