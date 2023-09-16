@@ -3,6 +3,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: last baseline;
+  margin-top: 2rem;
 }
 
 .ArticleGridCell {
