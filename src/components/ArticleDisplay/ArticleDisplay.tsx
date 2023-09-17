@@ -5,7 +5,7 @@ interface IArticleDisplay {
   article: Article;
   onHideArticle: () => void;
 }
-
+ 
 export function ArticleDisplay({ article, onHideArticle }: IArticleDisplay) {
   return (
     <div className="ArticleDisplay" data-testid="ArticleDisplay">

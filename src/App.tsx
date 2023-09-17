@@ -18,7 +18,7 @@ function App() {
   } = useApp();
 
   const categoryCounts = calculateArticleCount(categories, articles)
-
+ 
   return (
     <div className="App" data-testid="App">
       <Hero />
