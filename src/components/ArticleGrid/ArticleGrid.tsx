@@ -1,4 +1,5 @@
 import { Article } from "../../types";
+import { Button } from "../Button/Button";
 import "./ArticleGrid.css";
 
 interface IArticleGrid {
@@ -19,13 +20,7 @@ export function ArticleGrid({ articles, onSelectArticle }: IArticleGrid) {
             <img className="ArticleGridCellImage" src={imageUrl} />
             <h3>{title}</h3>
             <h4>{subtitle}</h4>
-            <button
-              onClick={() => {
-                onSelectArticle(id);
-              }}
-            >
-              View
-            </button>
+            <Button text="View" onClick={() => onSelectArticle(id)} />
           </div>
         );
       })}

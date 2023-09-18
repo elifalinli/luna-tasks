@@ -66,7 +66,7 @@ I finished off this task by completing the existing logic. However, it is worth 
 The product owner has asked that the main CTAs in the app (i.e. the "View" and "Close" buttons on the `ArticleGrid` and `ArticleDisplay` components) have their text displayed in uppercase. As an optimisation while making this change can you refactor those two components to use a common `Button` component (so that when the product owner decides to revert this change we only have to do it in one place 🤭)
 
 ```
-YOUR COMMENTS HERE
+I created a Button component and an interface for its props. To make them uppercase, the textTransform css property handled the situation. Lastly, replacing the button tags with the component and passing the appropriate props provided the desired optimisation.
 ```
 
 ## Task 5 - Mobile Responsiveness 📱

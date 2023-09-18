@@ -1,4 +1,5 @@
 import { Article } from "../../types";
+import { Button } from "../Button/Button";
 import "./ArticleDisplay.css";
 
 interface IArticleDisplay {
@@ -52,7 +53,7 @@ export function ArticleDisplay({ article, onHideArticle }: IArticleDisplay) {
             }
           })}
         </div>
-        <button onClick={onHideArticle}>Close</button>
+        <Button text="Close" onClick={onHideArticle}/>
       </div>
     </div>
   );
