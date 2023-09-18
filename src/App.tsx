@@ -17,7 +17,7 @@ function App() {
     setSelectedArticleId,
   } = useApp();
 
-  const categoryCounts = calculateArticleCount(categories, articles)
+  const categoryCounts = calculateArticleCount(articles)
  
   return (
     <div className="App" data-testid="App">
@@ -32,7 +32,7 @@ function App() {
         articles={articles}
       />
       <ArticleGrid
-        articles={filteredArticles}
+        articles={filteredArticles} 
         onSelectArticle={(id) => {
           setSelectedArticleId(id);
         }}

@@ -36,11 +36,12 @@ const handleCategoryClick = (categoryId: string) => {
     <div className="CategorySelector" data-testid="CategorySelector">
       {sortedCategories.map(({ id, title, color }) => {
         const isSelected = selectedCategoryId === id;
-        const articleCount = categoryCounts[id] || 0;
+        const articleCount = categoryCounts[id] || 0; 
         return (
           <div
             key={id}
             className="CategoryOption"
+            data-testid="CategoryOption"
             style={{ backgroundColor: isSelected ? "white" : color }}
             onClick={() => {
               handleCategoryClick(id);
@@ -52,4 +53,4 @@ const handleCategoryClick = (categoryId: string) => {
       })}
     </div>
   );
-}
+} 
