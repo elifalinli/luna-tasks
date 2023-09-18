@@ -34,8 +34,19 @@ export function ArticleDisplay({ article, onHideArticle }: IArticleDisplay) {
             } else if (type === "bullet-list" || type === "ordered-list") {
               /* TODO: implement lists display */
               return (
-                <div key={index} className="ArticleContentList">
-                  LIST CONTENT NEEDS TO APPEAR HERE
+                <div key={index} className="ArticleContentParagraph">
+                  {content.map(( {content} ) => {
+                    return ( 
+                      <ul>{content.map(({text, type}, index3) => {
+                        return (
+                        <span key={index3} style={{
+                          fontWeight: type === "bold-text" ? "bold" : "inherit", listStyle: "none"
+                        }}>
+                          {text}
+                        </span>)
+                      })}</ul>
+                    );
+                  })}
                 </div>
               );
             }

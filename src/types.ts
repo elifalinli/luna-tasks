@@ -10,7 +10,7 @@ export type Paragraph = {
   type: "paragraph";
 }; 
 
-type ListContent = ParagraphContent | Paragraph;
+type ListContent = Paragraph;
 
 export type List = {
   content: ListContent[];
