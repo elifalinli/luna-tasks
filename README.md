@@ -58,7 +58,7 @@ The `ArticleDisplay` component isn't quite complete as it is not able to render 
 Can you finish off the implementation by ensuring that list content is displayed in articles appropriately. Feel free to overhaul the existing implementation as you see fit
 
 ```
-YOUR COMMENTS HERE
+I finished off this task by completing the existing logic. However, it is worth noting that in types.ts line 13, the ListContent type was assigned to Paragraph OR ParagraphContent - I changed this to assign it only to the Paragraph type, because the ParagraphContent type is not applicable to the "bullet-list" or "ordered-list" type of objects.
 ```
 
 ## Task 4 - Shared Components 👪
