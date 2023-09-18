@@ -22,5 +22,5 @@ export function Hero() {
         </h2>
       </div>
     </div>
-  );
+  ); 
 }

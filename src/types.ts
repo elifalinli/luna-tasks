@@ -8,7 +8,7 @@ type ParagraphContent = {
 export type Paragraph = {
   content: ParagraphContent[];
   type: "paragraph";
-};
+}; 
 
 type ListContent = ParagraphContent | Paragraph;
 

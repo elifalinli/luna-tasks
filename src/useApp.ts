@@ -15,7 +15,7 @@ export function useApp() {
 
   const selectedArticle = useMemo(() => {
     return articles.find(({ id }) => id === selectedArticleId);
-  }, [articles, selectedArticleId]);
+  }, [articles, selectedArticleId]); 
 
   const filteredArticles = useMemo(() => {
     if (selectedCategoryId) {

@@ -48,7 +48,7 @@ npm run test:coverage
 Can you add extend the `App.test.tsx` file to get our overall coverage to in excess of `85%`?
 
 ```
-YOUR COMMENTS HERE
+I increased the coverage to 97.5%. I divided the tests to describe blocks. I also wrote unit tests for my utility function. I used test data to test the function in case the original data alters in the future and to test an edge case.
 ```
 
 ## Task 3 - Article List Content 📜

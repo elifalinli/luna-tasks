@@ -4,7 +4,7 @@ import "./ArticleGrid.css";
 interface IArticleGrid {
   articles: Article[];
   onSelectArticle: (articleId: string) => void;
-}
+};
 
 export function ArticleGrid({ articles, onSelectArticle }: IArticleGrid) {
   return (

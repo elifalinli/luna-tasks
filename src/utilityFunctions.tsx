@@ -1,7 +1,6 @@
-import { Category } from "./types";
 import { Article } from "./types";
 
-export function calculateArticleCount(categories: Category[], articles: Article[]): Record<string, number> {
+export function calculateArticleCount(articles: Article[]): Record<string, number> {
     const categoryCounts: Record<string, number> = {}
 
     articles.forEach((article) => {
@@ -14,4 +13,4 @@ export function calculateArticleCount(categories: Category[], articles: Article[
         })
     })
     return categoryCounts
-}
+} 
