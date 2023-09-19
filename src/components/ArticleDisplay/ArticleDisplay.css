@@ -31,14 +31,25 @@
   overflow-y: scroll;
 }
 
+@media only screen and (max-width: 393px ) {
+  .ArticleDisplay .ArticleContent {
+    max-height: 30vh;
+  }
+  .ArticleDisplay .ArticleContainer {
+    margin: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 .ArticleDisplay .ArticleContentParagraph {
   margin-bottom: 1rem;
 }
 
-.ArticleDisplay .ArticleContentList {
+/* .ArticleDisplay .ArticleContentList {
   margin-bottom: 1rem;
   background-color: red;
-}
+} */
 
 .ArticleDisplay button {
   background: #e68e86;
