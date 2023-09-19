@@ -74,7 +74,7 @@ I created a Button component and an interface for its props. To make them upperc
 We have had some feedback that the web app isn't working particularly well for users on mobile devices when viewing articles. Can you upgrade our ArticleDisplay component to be more mobile friendly while not impacting the current desktop experience?
 
 ```
-YOUR COMMENTS HERE
+From what I saw, the problem with mobile screens was the disappeared Close button and slightly unproportioned article display container in smaller screens. To fix this and not affect the desktop experience, I added the @media rule to the ArticleDisplay.css. When fixed to max-width: 393px and reducing the max-height property to half, the problem seems to be fixed.
 ```
 
 ## Task 6 - Accessibility 👓
