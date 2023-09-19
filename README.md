@@ -82,7 +82,10 @@ From what I saw, the problem with mobile screens was the disappeared Close butto
 An independent accessibility audit has highlighted some issues with our app. Can you explain what accessibility means in this context and implement some accessibility related enhancements to our app?
 
 ```
-YOUR COMMENTS HERE
+In the context of software, accesibility means inclusive designs and practises that allow users with disabilities to use digital products in ease. This includes people with visual, auditory or/and motor disabilities, and more. Ensuring that our products meet with accessibility standards is non-negotiable.
+
+I ran a lighthouse audit on my browser and the reports says the app is st 97% in case of accessibility. This is after I added an alt text to the images in ArticleGrid. According to the report, the problem is: 'Background and foreground colors do not have a sufficient contrast ratio.'. However, I thought I could still improve the accessibility using semantic tags, aria labels, making sure to have alt texts and avoid keyboard traps. I also changed the h2 elements' gray tone in ArticleGrid to get the right contrast using Chrome DevTools. It still has room for improvement but these are what I've done so far.
+
 ```
 
 ## Task 7 - New Search Feature 🔎
