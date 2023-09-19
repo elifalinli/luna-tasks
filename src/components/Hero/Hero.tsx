@@ -5,7 +5,7 @@ import backgroundImg from "./heroBackground.png";
 
 export function Hero() {
   return (
-    <div
+    <header
       className="Hero"
       style={{
         backgroundImage: `url(${backgroundImg})`,
@@ -21,6 +21,6 @@ export function Hero() {
           emotions
         </h2>
       </div>
-    </div>
+    </header>
   ); 
 }

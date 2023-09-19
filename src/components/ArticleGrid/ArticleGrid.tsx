@@ -12,16 +12,17 @@ export function ArticleGrid({ articles, onSelectArticle }: IArticleGrid) {
     <div className="ArticleGrid" data-testid="ArticleGrid">
       {articles.map(({ id, title, subtitle, imageUrl }) => {
         return (
-          <div
+          <article
             key={id}
             className="ArticleGridCell"
             data-testid="ArticleGridCell"
           >
-            <img className="ArticleGridCellImage" src={imageUrl} alt="Photos related to young girls' issues, changes depending on the theme"/>
+            <img className="ArticleGridCellImage" src={imageUrl} alt={`Represents the article titled: ${title}`}/>
             <h3>{title}</h3>
             <h4>{subtitle}</h4>
-            <Button text="View" onClick={() => onSelectArticle(id)} />
-          </div>
+            <Button text="View" onClick={() => onSelectArticle(id)}
+            aria-label={`View article titled: ${title}`} />
+          </article>
         );
       })}
     </div>

@@ -26,9 +26,11 @@
 }
 
 .ArticleGridCell h4 {
-  color: gray;
+  color: #817272;;
   font-family: Inter;
 }
+
+/* #d44242; gray: #817272;  */
 
 .ArticleGridCell button {
   background: #e68e86;

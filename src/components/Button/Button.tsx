@@ -7,7 +7,7 @@ interface ButtonProps {
 }
 export function Button({text, onClick}: ButtonProps) {
     return (
-        <button onClick={onClick} style={{textTransform: 'uppercase'}}>
+        <button onClick={onClick} style={{textTransform: 'uppercase'}} tabIndex={0}>
             {text}
 
         </button>

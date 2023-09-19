@@ -7,7 +7,8 @@
   right: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+  overflow: hidden; 
 }
 
 .ArticleDisplay .ArticleContainer {
@@ -15,10 +16,8 @@
   margin: 2rem;
   background-color: white;
   border-radius: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 2rem 3rem;
+  z-index: 1;
 }
 
 .ArticleDisplay .ArticleContainer h2 {
@@ -46,10 +45,6 @@
   margin-bottom: 1rem;
 }
 
-/* .ArticleDisplay .ArticleContentList {
-  margin-bottom: 1rem;
-  background-color: red;
-} */
 
 .ArticleDisplay button {
   background: #e68e86;
