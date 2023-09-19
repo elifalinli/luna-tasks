@@ -8,6 +8,8 @@ interface IArticleDisplay {
 }
  
 export function ArticleDisplay({ article, onHideArticle }: IArticleDisplay) {
+
+  
   return (
     <div className="ArticleDisplay" data-testid="ArticleDisplay">
       <div className="ArticleContainer">
@@ -17,7 +19,7 @@ export function ArticleDisplay({ article, onHideArticle }: IArticleDisplay) {
           {article.content.map(({ content, type }, index) => {
             if (type === "paragraph") {
               return (
-                <div key={index} className="ArticleContentParagraph">
+                <p key={index} className="ArticleContentParagraph">
                   {content.map(({ type, text }, index2) => {
                     return (
                       <span
@@ -30,7 +32,7 @@ export function ArticleDisplay({ article, onHideArticle }: IArticleDisplay) {
                       </span>
                     );
                   })}
-                </div>
+                </p>
               );
             } else if (type === "bullet-list" || type === "ordered-list") {
               /* TODO: implement lists display */
@@ -53,7 +55,7 @@ export function ArticleDisplay({ article, onHideArticle }: IArticleDisplay) {
             }
           })}
         </div>
-        <Button text="Close" onClick={onHideArticle}/>
+        <Button text="Close" onClick={onHideArticle} aria-label="Close Article"/>
       </div>
     </div>
   );

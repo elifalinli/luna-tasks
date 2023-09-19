@@ -18,6 +18,7 @@ function App() {
   } = useApp();
 
   const categoryCounts = calculateArticleCount(articles)
+  
  
   return (
     <div className="App" data-testid="App">
@@ -37,7 +38,7 @@ function App() {
           setSelectedArticleId(id);
         }}
       />
-      {!!selectedArticle && (
+      {selectedArticle && (
         <ArticleDisplay
           article={selectedArticle}
           onHideArticle={() => {
