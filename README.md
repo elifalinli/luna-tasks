@@ -84,7 +84,7 @@ An independent accessibility audit has highlighted some issues with our app. Can
 ```
 In the context of software, accesibility means inclusive designs and practises that allow users with disabilities to use digital products in ease. This includes people with visual, auditory or/and motor disabilities, and more. Ensuring that our products meet with accessibility standards is non-negotiable.
 
-I ran a lighthouse audit on my browser and the reports says the app is st 97% in case of accessibility. This is after I added an alt text to the images in ArticleGrid. According to the report, the problem is: 'Background and foreground colors do not have a sufficient contrast ratio.'. However, I thought I could still improve the accessibility using semantic tags, aria labels, making sure to have alt texts and avoid keyboard traps. I also changed the h2 elements' gray tone in ArticleGrid to get the right contrast using Chrome DevTools. It still has room for improvement but these are what I've done so far.
+I ran a lighthouse audit on my browser and the report says the app is at 97% regarding accessibility. This is after I added an alt text to the images in ArticleGrid. According to the report, the problem is: 'Background and foreground colors do not have a sufficient contrast ratio.'. However, I thought I could still improve the accessibility using semantic tags, aria labels, making sure to have alt texts and avoid keyboard traps. I also changed the h2 elements' gray tone in ArticleGrid to get the right contrast using Chrome DevTools. It still has room for improvement but these are what I've done so far.
 
 ```
 
@@ -95,7 +95,7 @@ It's time to roll you out your very first feature! The brief is short and there 
 The brief: Users need to be able to search across all of our articles via text
 
 ```
-YOUR COMMENTS HERE
+To complete this task, I created a search bar component between the CategorySelector and ArticleGrid components. The feature allows our users to search their words, and if the keyword is in any articles, the results show up. I first implemented the feature to search within just the article titles but then I changed it for it to search throughout the article content. I utilised the flatMap() method to flatten the data and concatanate the paragraph/list items into single strings, and then searched within them by using .includes().
 ```
 
 ## Bonus Task - Make the app "Pop" ❤️
