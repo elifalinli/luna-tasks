@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.scroll-top {
+    background-color: #e68e86;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.3rem;
+    /* position: fixed; */
+    font: inherit;
+    color: white;
+    width: 30%;
+    z-index: 1;
+    cursor: pointer;
+}
