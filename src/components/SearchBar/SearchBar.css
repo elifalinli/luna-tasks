@@ -1,0 +1,34 @@
+
+.SearchBar {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 3rem 3rem 1.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    flex-shrink: 1rem;
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputBar{
+  width: 100%;
+  border: 3px solid #e68e86;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  color: #e68e86;
+}
+
+.searchButton{
+    width: 10%;
+    height: 40px;
+    border: 1px solid #e68e86;
+    background: #e68e86;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
