@@ -49,3 +49,21 @@
   font-weight: 500;
   line-height: normal;
 }
+
+.Hero a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  font: inherit;
+  font-size: x-large;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+}
+
+.cta-hero{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

@@ -7,6 +7,7 @@ import { calculateArticleCount } from "./utilityFunctions";
 import { SearchBar } from "./components/SearchBar/SearchBar";
 import { useState } from "react";
 import { Article, RichTextItems } from "./types";
+import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const {
@@ -95,6 +96,7 @@ function App() {
           }}
         />
       )}
+      <ScrollToTop/>
     </div>
   );
 }
