@@ -103,5 +103,5 @@ To complete this task, I created a search bar component between the CategorySele
 As our newest team member, seeing the (albeit rudimentary) **luna** web app with fresh eyes for the first time is a moment that we like to capitalise on! Can you comment on the UX of our web app, and implement some changes that you think would **delight and surprise** our users.
 
 ```
-YOUR COMMENTS HERE
+The app is really easy to navigate, everything is extremely intuitive to use. The colorful palette is eye-pleasing and vibrant, which is appropriate for our target audience. Since the Hero section is what users immediately see, I added a CTA element for downloading the app. I also added a scroll to the top button to give a little touch to the UX. Overall, the app can use more movement, adding a carousel of images to the Hero section, some animations here and there without overdoing it can be fun for the audience. Adding light/dark mode also would delight the users!
 ```
